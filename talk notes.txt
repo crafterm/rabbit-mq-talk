@@ -80,9 +80,8 @@ Consumer
 
 Dan's REST/Rabbit ideas and any other thoughts about what to mention for Rabbit
 
-Demos apps with example code of the different exchange types
-  - Should we have a rails app example?
-    - Image resizing or something?
+- Rails direct exchange
+  - Image resizing, watermarking, etc
 
 - Single exchange
   - slider for surf report
