@@ -7,13 +7,9 @@ AMQP.start(:host => 'localhost') do
     p [ Time.now, *args ]
   end
   
-  # amq = MQ.new  
-  # amq.queue('surfreport').subscribe do |msg|
-  #   content = Marshal.load(msg)
-  #   log :received, "Updated surf report for #{content[:beach]}, swell #{content[:size]} feet"
-  # end
+  exchange = MQ.fanout('surfers')
   
-  MQ.queue('surfreport').bind(MQ.fanout('surfers')).subscribe do |msg|
+  MQ.queue('surfreport').bind(exchange).subscribe do |msg|
     content = Marshal.load(msg)
     log :received, "Updated surf report for #{content[:beach]}, swell #{content[:size]} feet"
   end
