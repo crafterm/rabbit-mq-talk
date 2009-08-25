@@ -1,0 +1,20 @@
+<p>
+  <b>Name:</b>
+  <%=h @photo.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @photo.description %>
+</p>
+
+<% @photo.assets.each do |asset| -%>
+<p>
+  <b><%=h asset.style.capitalize %>:</b><br/>
+  <%= image_tag asset.public_filename %>
+</p>
+<% end -%>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

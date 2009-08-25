@@ -1,0 +1,23 @@
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% @photos.each do |photo| %>
+  <tr>
+    <td><%=h photo.name %></td>
+    <td><%=h photo.description %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    <td><%= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= image_tag photo.assets.preview.first.public_filename if photo.assets.preview.first %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New photo', new_photo_path %>

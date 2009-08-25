@@ -1,0 +1,102 @@
+Intro
+  - Marcus
+    - Red Artisan, CLEAR Interactive
+  - Dan
+    - CLEAR Interactive, etc.
+
+Background
+  - As our Rails apps become more and more complex and larger in scale, eventually you'll get to the point where
+    - You can't do any more work within the request/response loop without making your app look slow
+    - You need to do some background work either as part of the domain or off load some long running jobs
+      - eg. trading server, image/video processing, indexing, data expiry, etc
+    - Your application becomes too monolithic and you need to start separating it into smaller parts that talk to each other
+    - You need to communicate with external systems and its important that messages get through
+  - Messaging is the solution
+  
+Messaging
+  - Many solutions have been tried and exist to solve the previous points
+    - Background processing 
+      - BJ, DJ, BackgroundRB, dRb, Airbrush, Workling/Starling, Memcached
+        - DJ appears to be winning the 'background processing' battle
+    - Messaging
+      - Stomp, ActiveMQ, and an entire bag/industry of commercial and platform specific solutions
+        - A mess
+
+AMQP
+  - Messaging platform started by Goldman Sachs
+    - Frustrated with having X different incompatible implementations of JMS
+  - Rather than an API specification
+    - Protocol specification
+      - Like HTTP/etc
+    - Implementation provides an independent API, interoperability comes from the protocol spec.
+  - Reliable messaging
+    - Acknowledgement
+    - Configurable message routing
+    - 
+
+RabbitMQ
+  - AMQP server implementation
+  - Written in Erlang/OTP
+    - Telco platform build by Ericsson.
+  - Distributed
+  - Store and Forward messaging
+  - First introduced to RabbitMQ via Ezra
+    - RailsConf 2008 in Portland
+    - He was working on Vertebra (released that conference)
+    - Using XMPP and EJabberD as the underlying technology
+      - XMPP is only really be using for chat/IM, however its
+        - distributed, XML based, reliable messaging, cross platform (lots of clients)
+        - even has things extra desirable like presence (buddies coming online, however can be used by services to automate things)
+        - lots of hi tech just for chat :)
+    - This year at RailsConf 2009 in Las Vegas, I sat next to Ezra at Benihana's for dinner before the conference started
+      - Talked about a lot of things, and I asked what he'd been working on recently
+        - Nanite, self assembling group of workers
+          - RabbitMQ based
+          - He said 'Rabbit is what I was looking for when I started using XMPP for Vertebra'
+    - From there I started digging further into RabbitMQ
+
+
+Working Parts
+  - AMQP Server (RabbitMQ)
+  - AMQP Clients
+    - Producer
+    - Consumer, takes messages out of the rabbit for use
+  - Ruby client libraries
+    - tmm1-amqp (event machine based, awesome but requires the event machine loop)
+    - bunny (non-event machine based, client library, blocking)
+
+Producer
+  - Creates messages and puts them into the rabbit
+  - Internally
+    - Defines an exchange (or is it typically the client?)
+      - (Think telephone exchange) flickr pic?
+      - Determines how messages are to be routed to consumers
+    - Creates a queue for publishing messages
+    - Publishes messages
+
+Consumer
+  - Subscribes to the queue via the exchange
+  - Consumes messages as they're delivered via the exchange
+
+Dan's REST/Rabbit ideas and any other thoughts about what to mention for Rabbit
+
+Demos apps with example code of the different exchange types
+  - Should we have a rails app example?
+    - Image resizing or something?
+
+- Single exchange
+  - slider for surf report
+  - command line acknowledgement
+
+- Fanout exchange
+  - slider for surf report
+  - command line acknowledgement
+  - surfer dude video acknowledgement when the waves are a certain height
+
+- Topic exchange (haven't built this bit yet)
+  - slider for loans
+  - loan amount affects stock prices published to the topic queue
+  - topic consumers report based on stock price (visual and audio)
+
+- Header exchange
+  - messages routed based on header parameters
