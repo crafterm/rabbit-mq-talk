@@ -1,4 +1,4 @@
-$:.unshift('../awesome')
+$:.unshift('../photos')
 
 require 'rubygems'
 require 'mq'
