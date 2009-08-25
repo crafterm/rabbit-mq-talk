@@ -228,6 +228,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -272,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>2</integer>
+									<integer>4</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -308,14 +310,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>surf_report_controller.rb</string>
+								<string>direct_client.rb</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,20 +323,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>surf_report_controller.rb</string>
+										<string>direct_client.rb</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BF4433321043F8D1005D44CA</string>
+										<string>BF44333E10440EBE005D44CA</string>
 										<key>history</key>
 										<array>
 											<string>BF7F2A42103979560000DB54</string>
 											<string>BF7F2A43103979560000DB54</string>
 											<string>BF7F2A4D10397CB90000DB54</string>
 											<string>BF7F2A6B10397EBC0000DB54</string>
+											<string>BF44333A10440EBE005D44CA</string>
+											<string>BF44333B10440EBE005D44CA</string>
 											<string>BF4432B91043F241005D44CA</string>
-											<string>BF4432DC1043F348005D44CA</string>
-											<string>BF4432DD1043F348005D44CA</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -347,16 +347,8 @@
 											<string>BF7F2A5210397CB90000DB54</string>
 											<string>BF7F2A5410397CB90000DB54</string>
 											<string>BF7F2A7A103982BE0000DB54</string>
-											<string>BF4432BC1043F241005D44CA</string>
-											<string>BF4432BD1043F241005D44CA</string>
-											<string>BF4432BE1043F241005D44CA</string>
-											<string>BF4432BF1043F241005D44CA</string>
-											<string>BF4432C01043F241005D44CA</string>
-											<string>BF4432C11043F241005D44CA</string>
-											<string>BF4432D61043F2F1005D44CA</string>
-											<string>BF4432D71043F2F1005D44CA</string>
-											<string>BF4432DE1043F348005D44CA</string>
-											<string>BF4432DF1043F348005D44CA</string>
+											<string>BF44333C10440EBE005D44CA</string>
+											<string>BF44333D10440EBE005D44CA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -414,9 +406,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BF4432AF1043EE07005D44CA</string>
+				<string>BF44333F10440EBE005D44CA</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BF4432B01043EE07005D44CA</string>
+				<string>BF44334010440EBE005D44CA</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -550,11 +542,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BF4432D91043F2F1005D44CA</string>
-		<string>BF4432DA1043F2F1005D44CA</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BF3407431038211F0011ACE7</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/crafterm/Desktop/Presentations/Ruby Melbourne/RabbitMQ/01 direct/Direct Client/Direct Client.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -635,7 +625,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>BF3407431038211F0011ACE7</string>
-				<string>BF4432C31043F241005D44CA</string>
+				<string>BF44334110440EBE005D44CA</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -755,13 +745,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>BF4432C41043F241005D44CA</string>
+				<string>BF44334210440EBE005D44CA</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>BF4432C51043F241005D44CA</string>
-				<string>BF4432C61043F241005D44CA</string>
-				<string>BF4432C71043F241005D44CA</string>
-				<string>BF4432C81043F241005D44CA</string>
-				<string>BF4432C91043F241005D44CA</string>
+				<string>BF44334310440EBE005D44CA</string>
+				<string>BF44334410440EBE005D44CA</string>
+				<string>BF44334510440EBE005D44CA</string>
+				<string>BF44334610440EBE005D44CA</string>
+				<string>BF44334710440EBE005D44CA</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -888,8 +878,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -925,7 +913,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>BF4432CA1043F241005D44CA</string>
+				<string>BF44334810440EBE005D44CA</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -935,7 +923,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
