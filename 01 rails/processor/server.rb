@@ -3,7 +3,7 @@ $:.unshift('../photos')
 require 'rubygems'
 require 'mq'
 require 'config/environment'
-require 'images'
+require 'cameraman'
 
 AMQP.start(:host => 'localhost') do
 
