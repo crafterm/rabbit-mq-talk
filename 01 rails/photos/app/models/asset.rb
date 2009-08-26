@@ -42,7 +42,7 @@ class Asset < ActiveRecord::Base
     def publish_content
       update_attribute :public_filename, "/photos/#{photo.id}/#{original_filename}"
       FileUtils.mkdir_p(File.dirname(path))
-      FileUtils.mv @content_path, path
+      FileUtils.cp @content_path, path
     end
     
     def notify_subscribers
