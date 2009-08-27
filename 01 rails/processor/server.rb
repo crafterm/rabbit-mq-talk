@@ -19,6 +19,7 @@ AMQP.start(:host => 'localhost') do
     Cameraman.preview(asset)
     Cameraman.greyscale(asset)
     Cameraman.watermark(asset)
+    Cameraman.edges(asset)
   end
   
 end

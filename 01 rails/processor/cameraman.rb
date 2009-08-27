@@ -66,6 +66,18 @@ class Cameraman
       end
     end
   end
+  
+  def self.edges(asset)
+    p = ProcessorBase.new(asset)
+    p.process do |image|
+      image.edges
+      image.render do |result|
+        path = "/tmp/#{asset.id}-edges.jpg"
+        result.save(path, OSX::NSJPEGFileType)
+        [ path, :edges ]
+      end
+    end
+  end
 
 end
 
