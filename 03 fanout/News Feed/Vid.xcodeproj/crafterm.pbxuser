@@ -70,8 +70,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 272987841;
-			PBXWorkspaceStateSaveDate = 272987841;
+			PBXPerProjectTemplateStateSaveDate = 273057937;
+			PBXWorkspaceStateSaveDate = 273057937;
 		};
 		perUserProjectItems = {
 			BF028039103AE4710083E794 /* PBXTextBookmark */ = BF028039103AE4710083E794 /* PBXTextBookmark */;
@@ -79,8 +79,8 @@
 			BF109D63103AE9EC00490387 /* PBXTextBookmark */ = BF109D63103AE9EC00490387 /* PBXTextBookmark */;
 			BF109D65103AE9EC00490387 /* PBXTextBookmark */ = BF109D65103AE9EC00490387 /* PBXTextBookmark */;
 			BF44330F1043F6BE005D44CA /* PBXTextBookmark */ = BF44330F1043F6BE005D44CA /* PBXTextBookmark */;
-			BF4433A310454E1E005D44CA /* PBXTextBookmark */ = BF4433A310454E1E005D44CA /* PBXTextBookmark */;
-			BF4433C71045771D005D44CA /* PBXTextBookmark */ = BF4433C71045771D005D44CA /* PBXTextBookmark */;
+			BF4E36B8104669740038BAD6 /* PBXTextBookmark */ = BF4E36B8104669740038BAD6 /* PBXTextBookmark */;
+			BF4E36E41047B2470038BAD6 /* PBXTextBookmark */ = BF4E36E41047B2470038BAD6 /* PBXTextBookmark */;
 		};
 		sourceControlManager = BF027FEE103AC9210083E794 /* Source Control */;
 		userBuildSettings = {
@@ -138,7 +138,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {657, 938}}";
 			sepNavSelRange = "{790, 0}";
-			sepNavVisRange = "{379, 707}";
+			sepNavVisRange = "{459, 649}";
 		};
 	};
 	BF028039103AE4710083E794 /* PBXTextBookmark */ = {
@@ -191,7 +191,7 @@
 		vrLen = 644;
 		vrLoc = 0;
 	};
-	BF4433A310454E1E005D44CA /* PBXTextBookmark */ = {
+	BF4E36B8104669740038BAD6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = BF027FFB103AD4390083E794 /* movie_controller.rb */;
 		name = "movie_controller.rb: 41";
@@ -201,15 +201,15 @@
 		vrLen = 707;
 		vrLoc = 379;
 	};
-	BF4433C71045771D005D44CA /* PBXTextBookmark */ = {
+	BF4E36E41047B2470038BAD6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = BF027FFB103AD4390083E794 /* movie_controller.rb */;
 		name = "movie_controller.rb: 41";
 		rLen = 0;
 		rLoc = 790;
 		rType = 0;
-		vrLen = 707;
-		vrLoc = 379;
+		vrLen = 649;
+		vrLoc = 459;
 	};
 	E8F5E25803AEB7C803A81C6F /* rb_main.rb */ = {
 		uiCtxt = {
