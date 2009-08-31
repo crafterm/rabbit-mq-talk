@@ -16,4 +16,4 @@ the Melbourne Ruby group.
   the News Feed project, which is a video of surfer quotes. As the dekstop client reports swell sizes, both the video and text
   feed report the information.
 
-[http://redartisan.com/2009/8/31/rabbitmq]
+[http://redartisan.com/2009/8/31/rabbitmq](http://redartisan.com/2009/8/31/rabbitmq)
